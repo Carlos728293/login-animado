@@ -1,0 +1,236 @@
+/* FONT DO GOOGLE FONTS(POPPIS) */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    background-image: radial-gradient(circle,rgba(2, 0, 36, 1) 48%, rgba(9, 9, 121, 1) 100%);
+    height: 100dvh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.background{
+    height: 100dvh;
+    display: flex;
+    gap: 25px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.background span{
+    background: #efefef;
+    height: 7px;
+    width: 7px;
+    border-radius: 50%;
+
+    /* ANIMAÇÃO */
+    animation: animar calc(120s / var(--n)) linear infinite;
+}
+@keyframes animar{
+    0%{
+        transform: translateY(-10vh);
+    }
+    50%{
+        filter: brightness(1.5);
+        background: #ffffff;
+    }
+    100%{
+        transform: translateY(98vh);
+    }
+}
+
+main{
+    background-color: #ebebeb;
+    padding: 20px;
+    min-width: 350px;
+    text-align: center;
+    border-radius: 8px;
+    z-index: 1;
+}
+main h1{
+    color: #101010;
+}
+
+main form{
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+main form .email, .senha{
+    position: relative;
+}
+main form .email input, .senha input{
+    background: transparent;
+    color: #2f2f2f;
+    width: 100%;
+    margin: 5px 0;
+    padding: 6px 28px 0 3px;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #22222277;
+    transition: all 0.3s ease;
+}
+main form .email input:focus,
+main form .email input:not(:placeholder-shown),
+main form .senha input:focus,
+main form .senha input:not(:placeholder-shown) {
+  border-bottom: 2px solid #2a7bf5;
+}
+main form .email label, .senha label{
+    color: #222;
+    position: absolute;
+    top: 0px;
+    left: 2px;
+    transition: all 0.3s ease;
+}
+main form .email input:focus + i + label,
+main form .email input:not(:placeholder-shown) + i + label,
+main form .senha input:focus + i + label,
+main form .senha input:not(:placeholder-shown) + i + label {
+  color: #2a7bf5;
+  transform: scale(0.8);
+  top: -20px;
+  left: -3px;
+}
+main form .email .fa-solid, .senha i{
+    color: #222;
+    position: absolute;
+    top: 0px;
+    right: 10px;
+    transition: all 0.3s ease;
+}
+main form .email input:focus + i,
+main form .email input:not(:placeholder-shown) + i,
+main form .senha input:focus + i,
+main form .senha input:not(:placeholder-shown) + i {
+  color: #2a7bf5;
+}
+
+main form .option_user{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 13px;
+}
+main form .option_user label{
+    color: #101010;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-weight: 500;
+}
+main form .option_user label input{
+    cursor: pointer;
+}
+main form .option_user a{
+    color: #2f2f2f;
+    transition: 0.4s;
+}
+main form .option_user a:hover{
+    color: #2a7bf5;
+}
+
+main form button{
+    background-color: #2a7bf5;
+    color: #ebebeb;
+    padding: 10px 0;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 4px;
+    outline: none;
+    cursor: pointer;
+    transition: .4s;
+}
+main form button:hover{
+    background-color: #2469d1;
+    color: #ffffff;
+}
+
+main form p{
+    color: #101010;
+    font-size: 13px;
+}
+main form p a{
+    color: #2f2f2f;
+    font-size: 13px;
+    transition: .3s;
+}
+main form p a:hover{
+    color: #2a7bf5;
+}
+
+/* MOBILE */
+@media screen and (max-width: 1000px) {
+    body{
+        height: 100dvh;
+    }
+
+    main{
+        min-height: 500px;
+        min-width: 90%;
+    }
+    main h1{
+        font-size: 2.5rem;
+    }
+
+    main form{
+        margin-top: 50px;
+    }
+    main form .email input, .senha input{
+        padding: 20px 28px 0 3px;
+        font-size: 20px;
+    }
+    main form .email label, .senha label{
+        top: 10px;
+        font-size: 18px;
+        font-weight: 500;
+    }
+    main form .email .fa-solid, .senha i{
+        top: 10px;
+        font-size: 18px;
+    }
+
+    main form .option_user{
+        margin: 10px 0;
+        font-size: 16px;
+    }
+    main form .option_user label input{
+        height: 20px;
+        width: 20px;
+    }
+    main form .email input:focus + i + label,
+    main form .email input:not(:placeholder-shown) + i + label,
+    main form .senha input:focus + i + label,
+    main form .senha input:not(:placeholder-shown) + i + label {
+        transform: scale(0.8);
+        top: -5px;
+        left: -3px;
+    }
+
+    main form button{
+        margin: 10px 0;
+        padding: 15px 0;
+        font-size: 20px;
+    }
+
+    main form p{
+        font-size: 16px;
+    }
+    main form p a{
+        font-size: 16px;
+    }
+}

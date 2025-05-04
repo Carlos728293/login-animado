@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <!-- TITÚLO -->
+    <title>Login</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- FONT AWESOME (ICONS) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- CSS -->
+     <link rel="stylesheet" href="src/css/style.css">
+</head>
+<body>
+    <main>
+        <h1>Login</h1>
+
+        <!--Formulario-->
+        <form action="#">
+            <!--Email-->
+            <div class="email">
+                <input type="email" placeholder=" " required>
+                <i class="fa-solid fa-user"></i>
+                <label for="">Email</label>
+            </div>
+
+            <!--Senha-->
+            <div class="senha">
+                <input type="password" placeholder=" " required>
+                <i class="fa-solid fa-lock"></i>
+                <label for="">Senha</label>
+            </div>
+
+            <!--Opção do usúario-->
+            <div class="option_user">
+                <!--Checkbox-->
+                <label for="">
+                    <input type="checkbox">
+                    <span>Lembrar</span>
+                </label>
+
+                <!--Senha esquecida-->
+                <a href="#">Esqueci minha Senha</a>
+            </div>
+
+            <!--Botão para logar-->
+            <button type="submit">Entrar</button>
+
+            <!--Criar conta-->
+            <p>
+                <span>Não tem uma conta?</span>
+                <a href="#">Registra-se</a>
+            </p>
+        </form>
+    </main>
+
+    <!-- BACKGROUND -->
+    <div class="background"></div>
+
+    <!-- JAVASCRIPT -->
+    <script src="src/javascript/background.js"></script>
+</body>
+</html>
