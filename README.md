@@ -2,6 +2,12 @@
 
 Este projeto é uma interface de **Login Responsiva** com **efeitos animados no fundo** usando HTML, CSS e JavaScript. Foi pensado com foco em estética, usabilidade e interatividade.
 
+## 🔗 Link do site
+
+```
+      https://login-animado-mu.vercel.app/
+```
+
 ## 🚀 Tecnologias Utilizadas
 
 - **HTML5** — estrutura semântica
@@ -31,10 +37,8 @@ index.html
 
 ## 🖼️ Captura de Tela
 
-```
-📌 Exemplo:
-![Login Screenshot](./src/assets/design/login-animado-design.PNG)
-```
+![Previl do site](/src/assets/design/screenshot.PNG)
+
 
 ## 🛠️ Como usar
 
@@ -44,8 +48,6 @@ index.html
    ```
 
 2. Abra o arquivo `index.html` no navegador.
-
-3. Acesse o link: https://login-animado-mu.vercel.app/
 
 > Nenhuma instalação adicional é necessária. É um projeto 100% front-end.
 
