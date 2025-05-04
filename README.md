@@ -31,10 +31,9 @@ index.html
 
 ## 🖼️ Captura de Tela
 
-> (Você pode adicionar uma imagem aqui futuramente)
 ```
 📌 Exemplo:
-![Login Screenshot](./screenshot.png)
+![Login Screenshot](./src/assets/design/login-animado-design.PNG)
 ```
 
 ## 🛠️ Como usar
@@ -45,6 +44,8 @@ index.html
    ```
 
 2. Abra o arquivo `index.html` no navegador.
+
+3. Acesse o link: https://login-animado-mu.vercel.app/
 
 > Nenhuma instalação adicional é necessária. É um projeto 100% front-end.
 
